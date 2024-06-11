@@ -69,7 +69,7 @@ const Balance = () => {
                         </thead>
                         <tbody className=''>
                             {combinedArray.map((item, index) => (
-                                <tr className={`border-2 rounded-md  font-semibold md:text-lg ${item.status == "Dr" ? 'text-red-500' : 'text-green-500'} text-xs border-t-2 py-52 border-white my-3`} key={index}>
+                                <tr className={`border-2 rounded-md  font-semibold md:text-lg ${item.status == "Dr" ? 'text-red-600' : 'text-green-600'} text-xs border-t-2 py-52 border-white my-3`} key={index}>
                                     <td className='border-t-2 border-white text-center md:px-4 px-2 py-3 w-fit'>{item.status}</td>
                                     <td className='text-center w-fit md:px-1 px-3 py-3'>{item.date}</td>
                                     <td className='text-center w-fit md:px-6 px-1 flex-col'>{item.mode}</td>
@@ -79,7 +79,7 @@ const Balance = () => {
                             ))}
                             <tr className='border-2 rounded-md font-semibold md:text-lg text-xs border-t-2 py-52 border-white '>
                                 <td colSpan={3} rowSpan={2} className='border-gray-100  text-blue-50 text-left font-bold  w-fit md:pl-20 pl-10 py-3'>TOTAL : </td>
-                                <td className={`text-center py-4 font-bold ${totalBalance> 0 ? 'text-green-500' : 'text-red-500'} `} id='amount'>
+                                <td className={`text-center py-4 font-bold ${totalBalance> 0 ? 'text-green-600' : 'text-red-600'} `} id='amount'>
                                     {totalBalance.toFixed(2)}
                                 </td>
                             </tr>
