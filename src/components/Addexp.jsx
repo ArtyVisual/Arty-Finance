@@ -72,7 +72,7 @@ const Expense = () => {
     />
 
     <div>
-      <h1 className='text-center md:text-5xl text-2xl font-bold text-zinc-300 my-12'>Enter Your Expense Details Here </h1>
+      <h1 className='text-center grid justify-center items-center justify-items-center md:text-5xl text-2xl font-bold text-zinc-300 my-12'>Enter Your Expense Details Here </h1>
       
       <div className="grid my-12 w-full justify-center py-2 gap-4 mb-4">
           <input
