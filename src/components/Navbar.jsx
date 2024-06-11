@@ -24,9 +24,10 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="flex justify-center items-center px-0 text-xl">
-          <img className='md:w-12 md:h-10 w-8 h-6 mr-2 md:ml-4  ' src={logo} alt="" />
-          <div className='flex justify-center items-center justify-items-center w-full'>
-          <span className='text-teal-200 font-bold md:text-2xl text-base gradient-text'>Arty-Finance</span>
+          <img className='md:w-12 md:h-10 w-8 h-6 mr-2 md:ml-4 pl-1  ' src={logo} alt="" />
+          <div className='flex justify-start items-center justify-items-center w-86'>
+          <span className='hidden md:flex text-teal-200 font-bold md:text-2xl pl-1  text-base gradient-text'>ArtyFinance</span>
+          <span className='md:hidden text-teal-200 font-bold text-xl  pl-0.5  gradient-text'>Arty_Finance</span>
           
           </div>
         </a>
@@ -41,15 +42,15 @@ const Navbar = () => {
       </div>
       <div className="hidden md:flex navbar-end  ">
         <Link to="https://github.com/ArtyVisual/">
-          <div className='flex hover:text-white btn  px-2 py-1 bg-yellow-100 text-black font-sans'>
+          <div className='flex hover:text-white btn mr-2 px-2 py-1 bg-yellow-100 text-black font-sans'>
             <img src={logout} className='w-6 h-6 ' alt="" />
             <span className=" hidden text-lg md:flex ">GitHub</span>
           </div>
         </Link>
       </div>
-      <div className='  navbar-end  md:hidden flex justify-end items-center'  >
+      <div className='navbar-end md:hidden flex justify-end items-center'  >
         <Link>
-           <div className='flex hover:text-white rounded-xl  px-2 py-2 bg-yellow-100 text-black font-sans'>
+           <div className='flex hover:text-white rounded-xl  px-2 mr-2 py-2 bg-yellow-100 text-black font-sans'>
             <img src={logout} className='w-4 h-4 ' alt="" />
             </div>
         </Link>
