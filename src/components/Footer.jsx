@@ -1,11 +1,15 @@
 import React from 'react'
+import fav from './img/favicon1.png'
+import insta from './img/instagram.png'
+import yout from './img/youtube.png'
+import git from './img/github.png'
 
 const Footer = () => {
   return (
     <div>
         <footer className="footer footer-center p-10 bg-primary text-primary-content">
   <aside>
-    <img className='w-20 h-16' src="img/favicon1.png" alt="" />
+    <img className='w-20 h-16' src={fav} alt="" />
     <p className="font-bold">
       Arty-Finance
     </p> yarn add react-toastify
@@ -16,9 +20,9 @@ const Footer = () => {
   </aside> 
   <nav>
     <div className="grid grid-flow-col gap-4">
-    <img src="img/instagram.png" alt="" />  
-    <img src="img/youtube.png" alt="" />  
-    <img src="img/github.png" alt="" />  
+    <img src={insta} alt="" />  
+    <img src={yout} alt="" />  
+    <img src={git} alt="" />  
     </div>
   </nav>
 </footer>
