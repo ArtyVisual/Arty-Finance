@@ -19,8 +19,7 @@ function App() {
 
     <HashRouter>
       <Routes>
-
-        <Route path="/Arty-Finance" element={<><Navbar /><Dash /><Footer/></>} />
+        <Route path="/" element={<><Navbar /><Dash /><Footer/></>} />
         <Route path="/expense" element={<><Navbar /><Expense /></>} />
         <Route path="/addexpense" element={<><Navbar /><AddExp /></>} />
         <Route path="/income" element={<><Navbar /><Income /></>} />

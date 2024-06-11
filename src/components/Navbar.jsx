@@ -15,7 +15,7 @@ const Navbar = () => {
             </svg>
           </div>
           <ul tabIndex={0} className="menu menu-lg dropdown-content  mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-64">
-            <li><NavLink to="/Arty-Finance">Dashboard</NavLink></li>
+            <li><NavLink to="/">Dashboard</NavLink></li>
             <li><NavLink to="/expense">Expense</NavLink></li>
             <li><NavLink to="/income">Income</NavLink></li>
             <li><NavLink to="/balance">Balance</NavLink></li>
@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden  lg:flex">
         <ul className="menu text-xl gap-2 menu-horizontal px-1">
-          <li><NavLink to="/Arty-Finance" activeClassName="active">Dashboard</NavLink></li>
+          <li><NavLink to="/" activeClassName="active">Dashboard</NavLink></li>
           <li><NavLink to="/expense" activeClassName="active">Expense</NavLink></li>
           <li><NavLink to="/income" activeClassName="active" >Income</NavLink></li>
           <li><NavLink to="/balance" activeClassName="active" >Balance</NavLink></li>
