@@ -2,6 +2,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import logo from './img/lightlogo2.png'
+import logout from './img/logout.png'
 
 
 const Navbar = () => {
@@ -22,7 +24,7 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="flex justify-center items-center px-0 text-xl">
-          <img className='md:w-12 md:h-10 w-8 h-6 mr-2 md:ml-4  ' src="img/lightlogo2.png" alt="" />
+          <img className='md:w-12 md:h-10 w-8 h-6 mr-2 md:ml-4  ' src={logo} alt="" />
           <div className='flex justify-center items-center'>
           <span className='text-teal-200 font-bold md:text-2xl text-sm'>Arty</span>
           <span className='text-yellow-50 font-semibold md:text-2xl text-sm'>-Finance</span>
@@ -40,7 +42,7 @@ const Navbar = () => {
       <div className="navbar-end ">
         <Link to="https://github.com/ArtyVisual/">
           <div className='flex hover:text-white btn  px-2 py-1 bg-yellow-100 text-black font-sans'>
-            <img src="img/github.png " className='w-6 h-6 ' alt="" />
+            <img src={logout} className='w-6 h-6 ' alt="" />
             <span className=" hidden text-lg md:flex ">GitHub</span>
           </div>
         </Link>
