@@ -79,7 +79,7 @@ const Balance = () => {
                             ))}
                             <tr className='border-2 rounded-md font-semibold md:text-lg text-xs border-t-2 py-52 border-white '>
                                 <td colSpan={3} rowSpan={2} className='border-gray-100  text-blue-50 text-left font-bold  w-fit md:pl-20 pl-10 py-3'>TOTAL : </td>
-                                <td className={`text-center py-4 font-bold ${totalBalance> 0 ? 'text-green-600' : 'text-red-600'} `} id='amount'>
+                                <td className={`text-center py-4 font-bold ${totalBalance> 0 ? 'text-green-600' : 'text-red-700'} `} id='amount'>
                                     {totalBalance.toFixed(2)}
                                 </td>
                             </tr>

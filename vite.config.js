@@ -2,8 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
-export default defineConfibase:'/Arty-Finance/',g({
-  
+export default defineConfig({
   plugins: [react()],
+  base:'/Arty-Finance'
   
 })
