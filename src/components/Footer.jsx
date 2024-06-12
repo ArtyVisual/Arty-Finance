@@ -12,7 +12,7 @@ const Footer = () => {
     <img className='w-20 h-16' src={fav} alt="" />
     <p className="font-bold">
       Arty-Finance
-    </p> yarn add react-toastify
+    </p>
     <p className="font-bold">
       ArtyVisual Development Products<br/>Providing reliable tech!
     </p> 
