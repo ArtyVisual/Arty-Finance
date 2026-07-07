@@ -54,7 +54,7 @@ const Dash = () => {
     <div className='my-20'>
         <br /><br />
            <div className='text-center'>
-            <span className='text-3xl font-bold font-serif text-gray-100 px-12 pb-5'>-DASHBOARD-</span>
+            <span className='text-3xl font-bold font-serif text-gray-100 px-12 pb-5'>-DASHBOARDdiufhu-</span>
         </div>
         <div className='flex flex-wrap justify-evenly items-center  my-10 pb-20' >
             <div className='mx-8 my-8 border-2 border-white'>
