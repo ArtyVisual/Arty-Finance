@@ -10,24 +10,22 @@ const Balance = () => {
     const [totalExpense, setTotalExpense] = useState(0);
     const [totalIncome, setTotalIncome] = useState(0);
     const [totalBalance, setTotalBalance] = useState(0);
+     
+    useEffect(() => {
+        let expense = localStorage.getItem("expenses");
+        if (expense) {
+            setExpenseArray(JSON.parse(expense))
+        }
+
+        }, [])
     
+    useEffect(() => {
+        let income = localStorage.getItem("incomes");
+        if (income) {
+            setIncomeArray(JSON.parse(income))
+        }
 
-  
-  useEffect(() => {
-    let expense = localStorage.getItem("expenses");
-    if (expense) {
-        setExpenseArray(JSON.parse(expense))
-    }
-
-    }, [])
-    
-  useEffect(() => {
-    let income = localStorage.getItem("incomes");
-    if (income) {
-        setIncomeArray(JSON.parse(income))
-    }
-
-    }, [])
+        }, [])
 
     useEffect(() => {
         const exptotal = ExpenseArray.reduce((acc, expense) => acc + parseFloat(expense.amount || 0), 0);
@@ -48,7 +46,7 @@ const Balance = () => {
   
  
 
-    const combinedArray = [...ExpenseArray, ...IncomeArray].sort((a, b) => new Date(a.date) - new Date(b.date));
+const combinedArray = [...ExpenseArray, ...IncomeArray].sort((a, b) => new Date(a.date) - new Date(b.date));
 
 
 
@@ -94,4 +92,4 @@ const Balance = () => {
   )
 }
 
-export default Balance
+export default Balance 

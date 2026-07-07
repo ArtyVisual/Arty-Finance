@@ -27,7 +27,7 @@ function App() {
         <Route path="/balance" element={<><Navbar /><Balance /></>} />
        
       </Routes>
-      </HashRouter>
+    </HashRouter>
     </div>
   );
 }
