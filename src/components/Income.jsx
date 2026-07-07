@@ -8,9 +8,6 @@ const Income = () => {
     const [IncomeArray, setIncomeArray] = useState([]);
     const [form, setForm] = useState({ desc: "", date: "", mode: "", amount: "", status:""});
 
-  // Load existing expenses from localStorage when the component mounts
-  
-
   useEffect(() => {
     let income = localStorage.getItem("incomes");
     if (income) {
